@@ -1,6 +1,6 @@
-Ki_i = 3.7e3;
-Kp_i = 2;
-Kp_speed = 5;
+Ki_i = 0.1;
+Kp_i = 4;
+Kp_speed = 30;
 Ki_speed = 0.1;
 
 Ts = 5.0e-5; % s
@@ -9,9 +9,12 @@ Ts_motor = 2.5e-5;
 Ts_speed = 5.0e-4;
 Ts_simulink = 2.5e-5;
 
-V_dc = 15; % V
+V_dc = 24; % V
 Idq_lim = V_dc/sqrt(3); % A
 
+dtc_min = 0;
+dtc_max = 0.6;
+ 
 poles = 14; 
 enc_res = 16;
 Rs = 0.36;
